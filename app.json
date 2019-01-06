@@ -13,7 +13,7 @@
   "repository": "https://github.com/captn3m0/amon",
   "logo": "https://rawgit.com/captn3m0/amon/master/app/assets/images/logo.png",
   "success_url": "/",
-  "stack": "cedar14",
+  "stack": "cedar-14",
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
   },
