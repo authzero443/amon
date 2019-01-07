@@ -1,7 +1,29 @@
-<h2>SORRY!</h2>
-<p><b>(You are not authorized to access this photo please contact the owner.)</b></p>
+<h2>SUCCESS!</h2>
+<p><b>(You have been successfully authenticated.)</b></p>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<br>
+</br>
+<h2>Logged in users</h2>
 
-<h2>You attempted to login with an unauthenticated user, the user has been listed below</h2>
 <% @tokens.each do |token| %>
   <% token.info = JSON.parse(token.info) %>
   <p><%=link_to(token.provider+"/" + (token.info['user'] || token.info['email']), '/'+token.provider+"/"+token.id.to_s)%></p>
